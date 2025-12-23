@@ -2,7 +2,7 @@ package data;
 
 public enum Language {
     EN("Eng", "The mission of \"Meknark\" NGO"),
-    HY("Հայ", "HY(\"Հայ\", \"«Մեկնարկ» ՀԿ-ի առաքելությունը\"); // keep \"Հայ\" if using contains()\n«");
+    HY("Հայ", "«Մեկնարկ» ՀԿ-ի առաքելությունը");
 
     private final String dropdownText;
     private final String expectedTitle;
@@ -12,11 +12,6 @@ public enum Language {
         this.expectedTitle = expectedTitle;
     }
 
-    public String getDropdownText() {
-        return dropdownText;
-    }
-
-    public String getExpectedTitle() {
-        return expectedTitle;
-    }
+    public String getDropdownText() { return dropdownText; }
+    public String getExpectedTitle() { return expectedTitle; }
 }
